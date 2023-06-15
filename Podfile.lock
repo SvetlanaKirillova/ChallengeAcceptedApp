@@ -1,0 +1,43 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.11)
+  - Realm (10.36.0):
+    - Realm/Headers (= 10.36.0)
+  - Realm/Headers (10.36.0)
+  - RealmSwift (10.36.0):
+    - Realm (= 10.36.0)
+  - SnapKit (5.6.0)
+  - TTCalendarPicker (0.1.7):
+    - SnapKit
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - RealmSwift (~> 10)
+  - SnapKit
+  - TTCalendarPicker (from `https://github.com/thumbtack/TTCalendarPicker.git`)
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - Realm
+    - RealmSwift
+    - SnapKit
+
+EXTERNAL SOURCES:
+  TTCalendarPicker:
+    :git: https://github.com/thumbtack/TTCalendarPicker.git
+
+CHECKOUT OPTIONS:
+  TTCalendarPicker:
+    :commit: 9f498a30d2fd76fd1f147bb9658dc1ddc0ce4bf7
+    :git: https://github.com/thumbtack/TTCalendarPicker.git
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  Realm: 3fd136cb4c83a927482a7f1612496d37beed3cf5
+  RealmSwift: 513d4dcbf5bfc4d573454088b592685fc48dd716
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  TTCalendarPicker: 41a4cecbc0be87bcc2aff2740c6cb835a1c26a90
+
+PODFILE CHECKSUM: 95d5e9256cb70001538113c597922cbe0a1789a0
+
+COCOAPODS: 1.11.3

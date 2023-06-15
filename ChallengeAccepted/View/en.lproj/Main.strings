@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "Can you cross out today?"; ObjectID = "2ds-ES-EII"; */
+"2ds-ES-EII.text" = "Can you cross out today?";
+
+/* Class = "UILabel"; text = "Challenge name"; ObjectID = "4OD-HJ-ZaS"; */
+"4OD-HJ-ZaS.text" = "Challenge name";
+
+/* Class = "UILabel"; text = "Some description"; ObjectID = "Bdk-9l-woj"; */
+"Bdk-9l-woj.text" = "Some description";
+
+/* Class = "UILabel"; text = "N"; ObjectID = "BeV-A5-y8G"; */
+"BeV-A5-y8G.text" = "N";
+
+/* Class = "UIButton"; configuration.title = "Cancel"; ObjectID = "CJj-qN-wQT"; */
+"CJj-qN-wQT.configuration.title" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "CJj-qN-wQT"; */
+"CJj-qN-wQT.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Current streak:"; ObjectID = "Lha-At-JWl"; */
+"Lha-At-JWl.text" = "Current streak:";
+
+/* Class = "UILabel"; text = "days"; ObjectID = "Su9-EE-APY"; */
+"Su9-EE-APY.text" = "days";
+
+/* Class = "UIButton"; configuration.title = "Save"; ObjectID = "UGp-Na-bNh"; */
+"UGp-Na-bNh.configuration.title" = "Save";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "UGp-Na-bNh"; */
+"UGp-Na-bNh.normalTitle" = "Button";
+
+/* Class = "UISegmentedControl"; W0q-pm-RjT.segmentTitles[0] = "Streak"; ObjectID = "W0q-pm-RjT"; */
+"W0q-pm-RjT.segmentTitles[0]" = "Streak";
+
+/* Class = "UISegmentedControl"; W0q-pm-RjT.segmentTitles[1] = "Counter"; ObjectID = "W0q-pm-RjT"; */
+"W0q-pm-RjT.segmentTitles[1]" = "Counter";
+
+/* Class = "UINavigationItem"; title = "Challenges"; ObjectID = "e8w-gm-DqA"; */
+"e8w-gm-DqA.title" = "Challenges";
+
+/* Class = "UILabel"; text = "Challenge"; ObjectID = "gKt-XI-iJH"; */
+"gKt-XI-iJH.text" = "Challenge";
+
+/* Class = "UILabel"; text = "Challenge Name"; ObjectID = "nxg-Gb-Qdq"; */
+"nxg-Gb-Qdq.text" = "Challenge Name";
+
+/* Class = "UITextField"; placeholder = "What is your challenge..."; ObjectID = "wbQ-IQ-vBE"; */
+"wbQ-IQ-vBE.placeholder" = "What is your challenge...";
