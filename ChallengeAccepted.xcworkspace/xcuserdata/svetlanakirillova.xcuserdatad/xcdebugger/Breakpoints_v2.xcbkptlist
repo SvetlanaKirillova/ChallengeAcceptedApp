@@ -46,8 +46,8 @@
             filePath = "ChallengeAccepted/Controllers/StreakViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,10 +62,10 @@
             filePath = "ChallengeAccepted/Controllers/ChallengeListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "updateTodayCheck()"
-            landmarkType = "7">
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "ChallengeListViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -78,169 +78,10 @@
             filePath = "ChallengeAccepted/Controllers/ChallengeListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "updateTodayCheck()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B90E4D42-D9BB-4545-89D8-B5113C46C15D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChallengeAccepted/Controllers/CalendarViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "calendarPicker(_:cellForDay:month:year:inVisibleMonth:at:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C7ED7319-FA65-4144-BF8B-79FB22095223"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChallengeAccepted/Controllers/StreakViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "saveTodayCheck(isDone:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C7ED7319-FA65-4144-BF8B-79FB22095223 - ceddac797a9d510"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in ChallengeAccepted.StreakViewController.saveTodayCheck(isDone: Swift.Bool) -&gt; ()"
-                  moduleName = "ChallengeAccepted"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Controllers/StreakViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "604">
-               </Location>
-               <Location
-                  uuid = "C7ED7319-FA65-4144-BF8B-79FB22095223 - 75a35fe2f75eff3d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ChallengeAccepted.StreakViewController.saveTodayCheck(isDone: Swift.Bool) -&gt; ()"
-                  moduleName = "ChallengeAccepted"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Controllers/StreakViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "296">
-               </Location>
-               <Location
-                  uuid = "C7ED7319-FA65-4144-BF8B-79FB22095223 - 75a35fe2f75efdb1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ChallengeAccepted.StreakViewController.saveTodayCheck(isDone: Swift.Bool) -&gt; ()"
-                  moduleName = "ChallengeAccepted"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Controllers/StreakViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "296">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8B80A93B-BBA5-4DBD-8BF7-2DF8E961F4C1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChallengeAccepted/Controllers/CalendarViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
-            landmarkName = "calendarPicker(_:cellForDay:month:year:inVisibleMonth:at:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "888A8C69-BCAF-4D20-A033-2EACA1731F43"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChallengeAccepted/View/CalendarCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
-            landmarkName = "dayTapped(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "85701FE9-D275-4120-9E00-1DAA5538C042"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChallengeAccepted/Controllers/StreakViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "saveTodayCheck(isDone:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "85701FE9-D275-4120-9E00-1DAA5538C042 - 75a35fe2f75efd90"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ChallengeAccepted.StreakViewController.saveTodayCheck(isDone: Swift.Bool) -&gt; ()"
-                  moduleName = "ChallengeAccepted"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Controllers/StreakViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "71"
-                  endingLineNumber = "71"
-                  offsetFromSymbolStart = "120">
-               </Location>
-               <Location
-                  uuid = "85701FE9-D275-4120-9E00-1DAA5538C042 - ceddac797a9d4c7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in ChallengeAccepted.StreakViewController.saveTodayCheck(isDone: Swift.Bool) -&gt; ()"
-                  moduleName = "ChallengeAccepted"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Controllers/StreakViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "73"
-                  endingLineNumber = "73"
-                  offsetFromSymbolStart = "136">
-               </Location>
-            </Locations>
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "ChallengeListViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -253,9 +94,9 @@
             filePath = "ChallengeAccepted/Controllers/StreakViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "runDoneAnimation()"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "runTodayDoneAnimation()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -310,22 +151,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0C93741E-35DC-460D-B09C-2EEDD9554BD4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChallengeAccepted/Controllers/StreakViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "updateView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "7157531A-22A9-43B9-9D4F-1172FF63049F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -333,8 +158,8 @@
             filePath = "ChallengeAccepted/Controllers/StreakViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
             landmarkName = "runComletionGoalAnimation()"
             landmarkType = "7">
             <Locations>
@@ -374,175 +199,78 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9E187ECE-016D-4466-9849-376146B37763"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChallengeAccepted/View/CalendarCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
-            landmarkName = "CalendarCell"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "146B3775-94A7-44D1-B572-F1AE335CC39E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChallengeAccepted/View/CalendarCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "CalendarCell"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "00108410-3A0A-4C49-B292-9D6A4566C24F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChallengeAccepted/View/CalendarCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "isItTodayCell(isToday:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1F5C8214-94DB-4BF2-AFEB-CF5E3890E8C5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChallengeAccepted/View/CalendarCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
-            landmarkName = "dayTapped(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8751F73F-D993-44F9-A53A-4DE7CBA71256"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChallengeAccepted/View/CalendarCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "dayTapped(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8751F73F-D993-44F9-A53A-4DE7CBA71256 - 3b60950c55f4b1a4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ChallengeAccepted.CalendarCell.dayTapped(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "ChallengeAccepted"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/View/CalendarCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "128"
-                  endingLineNumber = "128"
-                  offsetFromSymbolStart = "556">
-               </Location>
-               <Location
-                  uuid = "8751F73F-D993-44F9-A53A-4DE7CBA71256 - 3b60950c55f4b1a4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ChallengeAccepted.CalendarCell.dayTapped(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "ChallengeAccepted"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/View/CalendarCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "128"
-                  endingLineNumber = "128"
-                  offsetFromSymbolStart = "616">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "39117C2C-256C-4296-8DF7-CB44C2F0A124"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ChallengeAccepted/View/CalendarCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "isItTodayCell(isToday:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CC807D91-9BB4-4886-8495-A717242CB7FA"
+            uuid = "B198E53E-0C52-45B4-BEE4-4695725F6E0F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ChallengeAccepted/Controllers/ChallengeListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "loadChallenges()"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "ChallengeListViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74D3D2DB-0AE4-4F53-A584-BE0D585FDA34"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChallengeAccepted/Model/ChallengeModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "updateLastStreak()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "CC807D91-9BB4-4886-8495-A717242CB7FA - f29bb4ab217f436f"
+                  uuid = "74D3D2DB-0AE4-4F53-A584-BE0D585FDA34 - d1907d38d033e2f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ChallengeAccepted.ChallengeListViewController.loadChallenges() -&gt; ()"
+                  symbolName = "ChallengeAccepted.Challenge.updateLastStreak() -&gt; ()"
                   moduleName = "ChallengeAccepted"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Controllers/ChallengeListViewController.swift"
+                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Model/ChallengeModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "107"
-                  endingLineNumber = "107"
-                  offsetFromSymbolStart = "184">
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "448">
                </Location>
                <Location
-                  uuid = "CC807D91-9BB4-4886-8495-A717242CB7FA - f29bb4ab217f4350"
+                  uuid = "74D3D2DB-0AE4-4F53-A584-BE0D585FDA34 - d1907d38d033ff0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ChallengeAccepted.ChallengeListViewController.loadChallenges() -&gt; ()"
+                  symbolName = "ChallengeAccepted.Challenge.updateLastStreak() -&gt; ()"
                   moduleName = "ChallengeAccepted"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Controllers/ChallengeListViewController.swift"
+                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Model/ChallengeModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "108"
-                  endingLineNumber = "108"
-                  offsetFromSymbolStart = "184">
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  uuid = "74D3D2DB-0AE4-4F53-A584-BE0D585FDA34 - d1907d38d033fb2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChallengeAccepted.Challenge.updateLastStreak() -&gt; ()"
+                  moduleName = "ChallengeAccepted"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Model/ChallengeModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "448">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -550,63 +278,191 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B61B893D-C95B-4B91-98D1-15EE624F5799"
+            uuid = "223ADEAA-0F41-40B3-90EE-3EA4AA5375A3"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ChallengeAccepted/Controllers/StreakViewController.swift"
+            filePath = "ChallengeAccepted/Model/ChallengeModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "updateView()"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "updateLastStreak()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A92D137E-F52A-49DB-A3F9-0A91FC54FCB6"
+            uuid = "0447C603-0729-4042-B4BB-9E193700BD9A"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ChallengeAccepted/Controllers/StreakViewController.swift"
+            filePath = "ChallengeAccepted/ViewModels/ChallengeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "createNewChallenge(title:type:duration:goal:goalDirection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EB9D3A5E-A8C6-444A-8D17-92B546610167"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChallengeAccepted/Controllers/ChallengeListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA9B54EE-8D98-4548-89F8-E323A574F9B8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChallengeAccepted/Controllers/ChallengeListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
             endingLineNumber = "64"
-            landmarkName = "updateView()"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "A92D137E-F52A-49DB-A3F9-0A91FC54FCB6 - a62919011095f26"
+                  uuid = "DA9B54EE-8D98-4548-89F8-E323A574F9B8 - f1f1fe7a1902d508"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ChallengeAccepted.StreakViewController.updateView() -&gt; ()"
+                  symbolName = "ChallengeAccepted.ChallengeListViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
                   moduleName = "ChallengeAccepted"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Controllers/StreakViewController.swift"
+                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Controllers/ChallengeListViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "588">
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "180">
                </Location>
                <Location
-                  uuid = "A92D137E-F52A-49DB-A3F9-0A91FC54FCB6 - a62919011095f64"
+                  uuid = "DA9B54EE-8D98-4548-89F8-E323A574F9B8 - f1f1fe7a1902d508"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ChallengeAccepted.StreakViewController.updateView() -&gt; ()"
+                  symbolName = "ChallengeAccepted.ChallengeListViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
                   moduleName = "ChallengeAccepted"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Controllers/StreakViewController.swift"
+                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Controllers/ChallengeListViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "588">
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "196">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "718AE60B-21F0-48D2-9968-210902A11477"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChallengeAccepted/Model/Challenge.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "streak"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "718AE60B-21F0-48D2-9968-210902A11477 - 970683af38c38539"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChallengeAccepted.Challenge.streak.getter : Swift.Int"
+                  moduleName = "ChallengeAccepted"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Model/Challenge.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "976">
+               </Location>
+               <Location
+                  uuid = "718AE60B-21F0-48D2-9968-210902A11477 - 970683af38c38539"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChallengeAccepted.Challenge.streak.getter : Swift.Int"
+                  moduleName = "ChallengeAccepted"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Model/Challenge.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "924">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C54C4254-CADD-4F4F-9336-4477D9CE1A20"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChallengeAccepted/Model/Challenge.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "streak"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C54C4254-CADD-4F4F-9336-4477D9CE1A20 - 970683af38c38558"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChallengeAccepted.Challenge.streak.getter : Swift.Int"
+                  moduleName = "ChallengeAccepted"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Model/Challenge.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "684">
+               </Location>
+               <Location
+                  uuid = "C54C4254-CADD-4F4F-9336-4477D9CE1A20 - 970683af38c38558"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChallengeAccepted.Challenge.streak.getter : Swift.Int"
+                  moduleName = "ChallengeAccepted"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/svetlanakirillova/Documents/Development/iOS/Mine/ChallengeAccepted/ChallengeAccepted/Model/Challenge.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "632">
                </Location>
             </Locations>
          </BreakpointContent>

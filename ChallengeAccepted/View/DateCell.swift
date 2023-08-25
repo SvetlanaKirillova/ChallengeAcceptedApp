@@ -28,6 +28,7 @@ class DateCell: UICollectionViewCell {
         }
     }
 
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.clipsToBounds = false
@@ -52,14 +53,17 @@ class DateCell: UICollectionViewCell {
         isSelected = false
     }
 
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
+    
     override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
         super.apply(layoutAttributes)
     }
 
+    
     private func updateLabelColor() {
         if isSelected {
             label.textColor = .white
@@ -70,6 +74,7 @@ class DateCell: UICollectionViewCell {
         }
     }
 
+    
     private func updateBackgroundColor() {
         if isSelected {
             backgroundColor = UIColor(red: 0, green: 0.6235, blue: 0.851, alpha: 1.0)

@@ -31,6 +31,7 @@ class MonthHeaderView: UICollectionReusableView {
         }
     }
 
+    
     override init(frame: CGRect) {
         stackView = UIStackView()
         stackView.axis = .horizontal
@@ -59,7 +60,7 @@ class MonthHeaderView: UICollectionReusableView {
             make.bottom.equalToSuperview().inset(4)
         }
         
-
+        
 //        stackView.backgroundColor = UIColor(named: K.colors.lightGreen)
     }
 

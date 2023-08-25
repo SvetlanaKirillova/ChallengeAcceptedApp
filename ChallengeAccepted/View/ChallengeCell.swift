@@ -13,15 +13,17 @@ class ChallengeCell: UITableViewCell {
     
     @IBOutlet weak var progress: UIProgressView!
     
+    @IBOutlet weak var baseView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        baseView.layer.cornerRadius = 10
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
 }

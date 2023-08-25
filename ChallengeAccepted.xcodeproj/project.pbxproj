@@ -15,21 +15,26 @@
 		1C18701A29A22F560043A29D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C18701829A22F560043A29D /* Main.storyboard */; };
 		1C18701C29A22F590043A29D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C18701B29A22F590043A29D /* Assets.xcassets */; };
 		1C18701F29A22F590043A29D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C18701D29A22F590043A29D /* LaunchScreen.storyboard */; };
+		1C27222C2A4186C500CAF034 /* TicketCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27222B2A4186C500CAF034 /* TicketCollectionCell.swift */; };
 		1C380D1E2A1CC93300D7EF13 /* final.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C380D1D2A1CC93300D7EF13 /* final.json */; };
 		1C380D202A1CDB6400D7EF13 /* checkmark.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C380D1F2A1CDB6400D7EF13 /* checkmark.json */; };
-		1C46DF312A0ED79800404E8C /* done_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C46DF302A0ED79800404E8C /* done_1.json */; };
+		1C3B023C2A540413001F0145 /* done.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C3B023B2A540412001F0145 /* done.json */; };
+		1C71BEB12A976F9500AAB054 /* ChallengeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C71BEB02A976F9500AAB054 /* ChallengeListViewModel.swift */; };
+		1C71BEB32A9776F800AAB054 /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C71BEB22A9776F800AAB054 /* CreateChallengeViewModel.swift */; };
 		1C84538B2A18D6E5001EA4A8 /* MarkGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C84538A2A18D6E5001EA4A8 /* MarkGestureRecognizer.swift */; };
 		1C867B5129D592DD003CF70E /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C867B4F29D592DD003CF70E /* CalendarCell.swift */; };
-		1C867B5229D592DD003CF70E /* CalendarViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C867B5029D592DD003CF70E /* CalendarViewCell.xib */; };
+		1C867B5229D592DD003CF70E /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C867B5029D592DD003CF70E /* CalendarCell.xib */; };
 		1C8D318329D18F4D006D3C88 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D318229D18F4D006D3C88 /* CalendarViewController.swift */; };
 		1C8D318529D19083006D3C88 /* MonthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D318429D19083006D3C88 /* MonthHeaderView.swift */; };
 		1C8D318729D192DA006D3C88 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D318629D192DA006D3C88 /* DateCell.swift */; };
 		1C978A6129C347FA00ED83F4 /* StreakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C978A6029C347FA00ED83F4 /* StreakViewController.swift */; };
 		1C978A6329C3480D00ED83F4 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C978A6229C3480D00ED83F4 /* CounterViewController.swift */; };
-		1CA94D9329A4CDAC00BCB8CA /* ChallengeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA94D9229A4CDAC00BCB8CA /* ChallengeModel.swift */; };
+		1CA94D9329A4CDAC00BCB8CA /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA94D9229A4CDAC00BCB8CA /* Challenge.swift */; };
 		1CB9E3DD29ACB1CA008886BA /* CreateChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB9E3DC29ACB1CA008886BA /* CreateChallengeViewController.swift */; };
+		1CBD88142A922A9100471D69 /* ChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBD88132A922A9100471D69 /* ChallengeViewModel.swift */; };
 		1CD4B7252A32EE92002447FE /* ChallengeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD4B7232A32EE92002447FE /* ChallengeCell.swift */; };
 		1CD4B7262A32EE92002447FE /* ChallengeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD4B7242A32EE92002447FE /* ChallengeCell.xib */; };
+		1CFD12BF2A4060EC00E839B5 /* ticket.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CFD12BE2A4060EC00E839B5 /* ticket.json */; };
 		69F9FFC60459F32C9784E159 /* Pods_ChallengeAccepted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A50CE5A49F76B01DB7D842 /* Pods_ChallengeAccepted.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,22 +49,27 @@
 		1C18701B29A22F590043A29D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C18701E29A22F590043A29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C18702029A22F590043A29D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C27222B2A4186C500CAF034 /* TicketCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionCell.swift; sourceTree = "<group>"; };
 		1C380D1D2A1CC93300D7EF13 /* final.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = final.json; sourceTree = "<group>"; };
 		1C380D1F2A1CDB6400D7EF13 /* checkmark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = checkmark.json; sourceTree = "<group>"; };
-		1C46DF302A0ED79800404E8C /* done_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = done_1.json; sourceTree = "<group>"; };
+		1C3B023B2A540412001F0145 /* done.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = done.json; sourceTree = "<group>"; };
+		1C71BEB02A976F9500AAB054 /* ChallengeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListViewModel.swift; sourceTree = "<group>"; };
+		1C71BEB22A9776F800AAB054 /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
 		1C84538A2A18D6E5001EA4A8 /* MarkGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkGestureRecognizer.swift; sourceTree = "<group>"; };
 		1C867B4F29D592DD003CF70E /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
-		1C867B5029D592DD003CF70E /* CalendarViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarViewCell.xib; sourceTree = "<group>"; };
+		1C867B5029D592DD003CF70E /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
 		1C8D318229D18F4D006D3C88 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		1C8D318429D19083006D3C88 /* MonthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthHeaderView.swift; sourceTree = "<group>"; };
 		1C8D318629D192DA006D3C88 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		1C945FEF29D19AD700AFBAE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		1C978A6029C347FA00ED83F4 /* StreakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakViewController.swift; sourceTree = "<group>"; };
 		1C978A6229C3480D00ED83F4 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
-		1CA94D9229A4CDAC00BCB8CA /* ChallengeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeModel.swift; sourceTree = "<group>"; };
+		1CA94D9229A4CDAC00BCB8CA /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		1CB9E3DC29ACB1CA008886BA /* CreateChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewController.swift; sourceTree = "<group>"; };
+		1CBD88132A922A9100471D69 /* ChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewModel.swift; sourceTree = "<group>"; };
 		1CD4B7232A32EE92002447FE /* ChallengeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCell.swift; sourceTree = "<group>"; };
 		1CD4B7242A32EE92002447FE /* ChallengeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeCell.xib; sourceTree = "<group>"; };
+		1CFD12BE2A4060EC00E839B5 /* ticket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ticket.json; sourceTree = "<group>"; };
 		1E996454A661D607AD15DB1F /* Pods-ChallengeAccepted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeAccepted.release.xcconfig"; path = "Target Support Files/Pods-ChallengeAccepted/Pods-ChallengeAccepted.release.xcconfig"; sourceTree = "<group>"; };
 		40A50CE5A49F76B01DB7D842 /* Pods_ChallengeAccepted.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeAccepted.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,8 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				1C380D1D2A1CC93300D7EF13 /* final.json */,
+				1C3B023B2A540412001F0145 /* done.json */,
 				1C380D1F2A1CDB6400D7EF13 /* checkmark.json */,
-				1C46DF302A0ED79800404E8C /* done_1.json */,
+				1CFD12BE2A4060EC00E839B5 /* ticket.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -109,10 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				1C0CD7452A0EC2FC003E201C /* Resources */,
-				1CA94D9129A4CD6E00BCB8CA /* Model */,
 				1C18701229A22F560043A29D /* AppDelegate.swift */,
 				1C18701429A22F560043A29D /* SceneDelegate.swift */,
-				1C18702629A232890043A29D /* Controllers */,
+				1CA94D9129A4CD6E00BCB8CA /* Model */,
+				1CBD88122A922A6200471D69 /* ViewModels */,
 				1C18702729A232A90043A29D /* View */,
 				1C18701B29A22F590043A29D /* Assets.xcassets */,
 				1C18701D29A22F590043A29D /* LaunchScreen.storyboard */,
@@ -138,13 +149,15 @@
 		1C18702729A232A90043A29D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1C18702629A232890043A29D /* Controllers */,
 				1C8D318429D19083006D3C88 /* MonthHeaderView.swift */,
 				1C8D318629D192DA006D3C88 /* DateCell.swift */,
 				1C867B4F29D592DD003CF70E /* CalendarCell.swift */,
-				1C867B5029D592DD003CF70E /* CalendarViewCell.xib */,
+				1C867B5029D592DD003CF70E /* CalendarCell.xib */,
 				1C18701829A22F560043A29D /* Main.storyboard */,
 				1CD4B7232A32EE92002447FE /* ChallengeCell.swift */,
 				1CD4B7242A32EE92002447FE /* ChallengeCell.xib */,
+				1C27222B2A4186C500CAF034 /* TicketCollectionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,9 +165,19 @@
 		1CA94D9129A4CD6E00BCB8CA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1CA94D9229A4CDAC00BCB8CA /* ChallengeModel.swift */,
+				1CA94D9229A4CDAC00BCB8CA /* Challenge.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1CBD88122A922A6200471D69 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1CBD88132A922A9100471D69 /* ChallengeViewModel.swift */,
+				1C71BEB02A976F9500AAB054 /* ChallengeListViewModel.swift */,
+				1C71BEB22A9776F800AAB054 /* CreateChallengeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		6CF7F27E27845B15748CFB10 /* Pods */ = {
@@ -240,13 +263,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CFD12BF2A4060EC00E839B5 /* ticket.json in Resources */,
 				1C18701F29A22F590043A29D /* LaunchScreen.storyboard in Resources */,
-				1C46DF312A0ED79800404E8C /* done_1.json in Resources */,
 				1C18701C29A22F590043A29D /* Assets.xcassets in Resources */,
 				1C380D202A1CDB6400D7EF13 /* checkmark.json in Resources */,
-				1C867B5229D592DD003CF70E /* CalendarViewCell.xib in Resources */,
+				1C867B5229D592DD003CF70E /* CalendarCell.xib in Resources */,
 				1CD4B7262A32EE92002447FE /* ChallengeCell.xib in Resources */,
 				1C380D1E2A1CC93300D7EF13 /* final.json in Resources */,
+				1C3B023C2A540413001F0145 /* done.json in Resources */,
 				1C18701A29A22F560043A29D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +326,7 @@
 			files = (
 				1C8D318329D18F4D006D3C88 /* CalendarViewController.swift in Sources */,
 				1C8D318729D192DA006D3C88 /* DateCell.swift in Sources */,
+				1CBD88142A922A9100471D69 /* ChallengeViewModel.swift in Sources */,
 				1C867B5129D592DD003CF70E /* CalendarCell.swift in Sources */,
 				1C8D318529D19083006D3C88 /* MonthHeaderView.swift in Sources */,
 				1C978A6129C347FA00ED83F4 /* StreakViewController.swift in Sources */,
@@ -309,11 +334,14 @@
 				1C12F48729E0395500675C00 /* Constants.swift in Sources */,
 				1C84538B2A18D6E5001EA4A8 /* MarkGestureRecognizer.swift in Sources */,
 				1C18701729A22F560043A29D /* ChallengeListViewController.swift in Sources */,
+				1C71BEB12A976F9500AAB054 /* ChallengeListViewModel.swift in Sources */,
 				1CD4B7252A32EE92002447FE /* ChallengeCell.swift in Sources */,
+				1C27222C2A4186C500CAF034 /* TicketCollectionCell.swift in Sources */,
 				1C18701329A22F560043A29D /* AppDelegate.swift in Sources */,
 				1C978A6329C3480D00ED83F4 /* CounterViewController.swift in Sources */,
 				1C18701529A22F560043A29D /* SceneDelegate.swift in Sources */,
-				1CA94D9329A4CDAC00BCB8CA /* ChallengeModel.swift in Sources */,
+				1C71BEB32A9776F800AAB054 /* CreateChallengeViewModel.swift in Sources */,
+				1CA94D9329A4CDAC00BCB8CA /* Challenge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,8 +498,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,8 +528,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
