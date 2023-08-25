@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" reuseIdentifier="dayCell" id="gTV-IL-0wX" customClass="CalendarCell" customModule="ChallengeAccepted" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="41" height="41"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="41" height="41"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGf-K2-qxD">
+                        <rect key="frame" x="0.0" y="0.0" width="41" height="41"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yw2-Y1-0Jc">
+                                <rect key="frame" x="6.5" y="10.5" width="28" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="p2d-1G-K1S">
+                                <rect key="frame" x="0.0" y="0.0" width="41" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="BrandRed"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="BrandLightBlue"/>
+                        <color key="tintColor" name="BrandOrange"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Yw2-Y1-0Jc" firstAttribute="centerX" secondItem="gGf-K2-qxD" secondAttribute="centerX" id="Xhn-54-6NH"/>
+                            <constraint firstItem="Yw2-Y1-0Jc" firstAttribute="centerY" secondItem="gGf-K2-qxD" secondAttribute="centerY" id="pOd-f6-syR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gGf-K2-qxD" secondAttribute="trailing" id="Kyk-Us-RFa"/>
+                <constraint firstAttribute="bottom" secondItem="gGf-K2-qxD" secondAttribute="bottom" id="UMS-vn-TJe"/>
+                <constraint firstItem="gGf-K2-qxD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jmE-0r-PXw"/>
+                <constraint firstItem="gGf-K2-qxD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vX2-j9-htH"/>
+            </constraints>
+            <connections>
+                <outlet property="baseView" destination="gGf-K2-qxD" id="sNB-m9-Wht"/>
+                <outlet property="checkmarkImage" destination="p2d-1G-K1S" id="HNL-F3-ELZ"/>
+                <outlet property="dateLabel" destination="Yw2-Y1-0Jc" id="qpm-Jg-9yA"/>
+            </connections>
+            <point key="canvasLocation" x="136.95652173913044" y="67.96875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <namedColor name="BrandLightBlue">
+            <color red="0.64800000190734863" green="0.79699999094009399" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="BrandOrange">
+            <color red="0.96438981269113144" green="0.82697852775360281" blue="0.61718941015482065" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="BrandRed">
+            <color red="0.99351347477064222" green="0.69866431451612909" blue="0.69866431451612909" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

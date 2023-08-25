@@ -27,9 +27,15 @@ class CalendarViewController: UIViewController {
     lazy var dayOfWeekHeaders: [String] = {
         let dateFormatter = DateFormatter()
         dateFormatter.calendar = calendar
-        return dateFormatter.weekdaySymbols.map({ String($0.prefix(2)) })
+        
+        var weekdaySymbols = dateFormatter.weekdaySymbols!
+        
+        for _ in 0..<dateFormatter.calendar.firstWeekday-1 {
+            weekdaySymbols.append(weekdaySymbols.remove(at: 0))
+        }
+        return weekdaySymbols.map({ String($0.prefix(2)) })
     }()
-
+    
     var calendar: Calendar {
         
         return calendarPicker.calendar
@@ -39,12 +45,10 @@ class CalendarViewController: UIViewController {
   
 
     required init?(coder aDecoder: NSCoder) {
-        
-        var calendarM = Calendar(identifier: .gregorian)
-        calendarM.firstWeekday = 2
+ 
         
         let date = Date()
-        self.calendarPicker = CalendarPicker(date: date, calendar: calendarM)
+        self.calendarPicker = CalendarPicker(date: date)
 
         super.init(coder: aDecoder)
         
@@ -53,9 +57,11 @@ class CalendarViewController: UIViewController {
 
         self.calendarPicker.registerMonthHeaderView(MonthHeaderView.self, withReuseIdentifier: "MonthHeader")
         self.calendarPicker.monthHeaderHeight = 45
-        self.calendarPicker.calendarHeightMode = .dynamic
+        self.calendarPicker.calendarHeightMode = .fixed
         self.calendarPicker.dataSource = self
         self.calendarPicker.delegate = self
+        self.calendarPicker.cellHeightMode = .aspectRatio(0.9)
+        
         
     }
     
@@ -63,24 +69,23 @@ class CalendarViewController: UIViewController {
         super.viewDidLoad()
         
         calendarPicker.allowsMultipleSelection = true
-        self.calendarPicker.viewBackgrounColor = UIColor(named: K.colors.lightBlue)
-        self.calendarPicker.viewCornerRadius = 10
-        
 
-        
+        self.calendarPicker.viewBackgrounColor = UIColor(named: K.colors.lightBlue)
+//        self.calendarPicker.viewCornerRadius = 10
+        self.calendarPicker.gridColor = .white
+
         initiateView()
- 
-        
+    
     }
     
+    
     func reloadSelectedDates(with selectedDates: [Date]){
-        //        print("Reloading selected dates in the calendar... \(selectedDates)")
+
         calendarPicker.selectedDates = selectedDates
-        //        print("Calendar picker selected: \(calendarPicker.selectedDates)")
-        
         calendarPicker.reloadData()
         
     }
+    
     
     func initiateView(){
  
@@ -93,10 +98,6 @@ class CalendarViewController: UIViewController {
 
     }
 
-//    func saveSelectedCell(isSelectedCell: Bool){
-//        parentVC?.saveTodayCheck(isDone: isSelectedCell)
-//    }
-
 }
 
 extension CalendarViewController: CalendarPickerDataSource {
@@ -104,67 +105,26 @@ extension CalendarViewController: CalendarPickerDataSource {
     func calendarPicker(_ calendarPicker: CalendarPicker, cellForDay day: Int,
                         month: Int, year: Int, inVisibleMonth: Bool, at indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = calendarPicker.dequeReusableDateCell(
-            withReuseIdentifier: K.calendarCellIdentifier,
-            indexPath: indexPath)
-            as! CalendarCell
+        guard let cell = calendarPicker.dequeReusableDateCell( withReuseIdentifier: K.calendarCellIdentifier, indexPath: indexPath) as? CalendarCell else {
+            fatalError("Cannot deque cell with identifier \(K.calendarCellIdentifier)")
+        }
+        
         cell.dateLabel.text = String(day)
         cell.isInVisibleMonth = inVisibleMonth
      
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
         let components = calendarPicker.calendar.dateComponents([.year, .month, .day], from: calendarPicker.today)
         
 
         if  (components.year == year && components.month == month && components.day == day && inVisibleMonth == true) {
-            
-//            if !cell.isSelected{
-//                runCheckAnimation(onView: cell.view)
-//            }
             cell.isItTodayCell(isToday: true)
 
-
-         
         } else {
+            
             cell.isItTodayCell(isToday: false)
         }
+        
         return cell
     }
-    
-    func calendarPicker(_ calendarPicker: CalendarPicker, shouldSelectDate date: Date) -> Bool {
-        return false
-    }
-    
-    func calendarPicker(_ calendarPicker: CalendarPicker, shouldDeselectDate date: Date) -> Bool {
-        return false
-    }
-    
-    func runCheckAnimation(onView: UIView){
-        print(onView)
-
-        checkAnimationView = .init(name: "checkmark")
-    //        print(view.bounds)
-        checkAnimationView!.frame = onView.bounds
-        // 1. Set animation content mode
-          
-        checkAnimationView!.contentMode = .scaleAspectFill
-          
-          // 2. Set animation loop mode
-          
-        checkAnimationView!.loopMode = .playOnce
-          
-          // 3. Adjust animation speed
-          
-        checkAnimationView!.animationSpeed = 0.9
-        onView.addSubview(checkAnimationView!)
-          
-          // 4. Play animation
-        checkAnimationView!.play { whenDone in
-            self.checkAnimationView?.isHidden = true
-        }
-    }
-    
-    
     
 }
 
@@ -172,11 +132,11 @@ extension CalendarViewController: CalendarPickerDelegate {
     
     func calendarPicker(_ calendarPicker: CalendarPicker, headerForMonth month: Int, year: Int, indexPath: IndexPath) -> UICollectionReusableView {
 
-        let header = calendarPicker.dequeMonthHeaderView(withReuseIdentifier: "MonthHeader", indexPath: indexPath) as! MonthHeaderView
+        let header = calendarPicker.dequeMonthHeaderView(withReuseIdentifier: K.monthHeaderId, indexPath: indexPath) as! MonthHeaderView
         let date = DateComponents(calendar: calendarPicker.calendar, year: year, month: month).date!
         header.monthLabel.text = monthFormatter.string(from: date).capitalized
         header.dayOfWeekHeaders = dayOfWeekHeaders
-        
+
         return header
     }
 
@@ -190,8 +150,47 @@ extension CalendarViewController: CalendarPickerDelegate {
         }
     }
     
+
+    func calendarPicker(_ calendarPicker: CalendarPicker, shouldSelectDate date: Date) -> Bool {
+
+        if let parent = self.parent as? StreakViewController {
+            if let challengeVieModel = parent.challengeViewModel {
+                if date < challengeVieModel.startDate || date > calendarPicker.today {
+                    print("Selected date(\(date) is out of Range")
+                    return false
+                }
+            }
+        } else {
+            print("ERROR: Cannot downcast parent View Controller!")
+        }
+
+        return true
+    }
     
+    
+    func calendarPicker(_ calendarPicker: CalendarPicker, didSelectDate date: Date) {
+
+        print("Selected date \( date.formatted(date: .complete, time: .omitted))")
+        if let index = calendarPicker.selectedDates.firstIndex(of: date) {
+
+            calendarPicker.selectedDates.remove(at: index)
+        }
+        if let parent = self.parent as? StreakViewController {
+            parent.updateCheckDateView(withDate: date)
+        }
+        
+    }
+    
+    
+    func calendarPicker(_ calendarPicker: CalendarPicker, didDeselectDate date: Date) {
+        if let parent = self.parent as? StreakViewController {
+            parent.saveCheck(forDate: date, isDone: false)
+        }
+    }
+    
+
 }
+
 
 
 
