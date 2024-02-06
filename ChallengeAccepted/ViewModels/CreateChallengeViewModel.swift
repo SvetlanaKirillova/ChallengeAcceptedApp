@@ -19,8 +19,6 @@ enum StreakDurations: String, CaseIterable {
         case .days21: return 21
         }
     }
-    
-    
 }
 
 enum CounterDuration: Int {
@@ -47,25 +45,37 @@ struct CreateChallengeViewModel {
         
     }
     
-    // MARK: - CRUD for Challenges
     
+    // MARK: - Add New Challenge
 
-    func createNewChallenge(title: String, type: ChallengeType, duration: Int, goal: Int?, goalDirection: GoalSign? ){
+    func createStreakChallenge(title: String, duration: Int ){
         
         let newChallenge = Challenge()
         newChallenge.title = title
-        newChallenge.type = type
+        newChallenge.type = .streak
+
+        newChallenge.duration = duration
+        print("Creating new challenge: \(newChallenge)")
             
-        if type == ChallengeType.counter {
-            
-            if let goal = goal, let goalDirection = goalDirection {
-                newChallenge.goal = goal
-                newChallenge.counterGoalDirection = goalDirection
-                
-            } else {
-                print("ERROR: Theare not enough parameters to create Counter Challenge!")
+        do {
+            try realm.write{
+                realm.add(newChallenge)
             }
+            
+        } catch {
+            print("Error creating Challenge: \(error)")
         }
+    }
+    
+    
+    func createCounterChallenge(title: String, duration: Int, goal: Int, goalDirection: GoalSign){
+        
+        let newChallenge = Challenge()
+        newChallenge.title = title
+        newChallenge.type = .counter
+            
+        newChallenge.goal = goal
+        newChallenge.counterGoalDirection = goalDirection
         
         newChallenge.duration = duration
         print("Creating new challenge: \(newChallenge)")
@@ -97,10 +107,7 @@ struct CreateChallengeViewModel {
     func getDurationFor(type: ChallengeType, title: String ) -> Int {
         
         guard let duration = (type == .streak) ?
-//                streakDurations[title] :
-                StreakDurations.allCases.first(where: { $0.rawValue == title })?.days :
-                counterDurations[title] else {
-            fatalError("There are duaration title that not in durations list! \(title)")
+            StreakDurations.allCases.first(where: { $0.rawValue == title })?.days : counterDurations[title] else {            fatalError("There are duration title that not in durations list! \(title)")
         }
         
         return duration

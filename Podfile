@@ -15,6 +15,12 @@ target 'ChallengeAccepted' do
   pod 'IQKeyboardManagerSwift'
 #  pod 'ChameleonFramework/Swift'
 #  , :git => 'https://github.com/wowansm/Chameleon.git', :branch => 'swift5'
+  
+end
+
+target 'ChallengeAcceptedTests' do
+
+  inherit! :search_paths
 
   
 end

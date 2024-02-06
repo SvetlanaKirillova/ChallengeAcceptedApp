@@ -26,6 +26,7 @@ struct ChallengeListViewModel {
     
     
     func getChallengeBy(index: Int) -> Challenge? {
+        
         if let challengesCount = challenges?.count {
             if index < challengesCount {
                 return challenges?[index]

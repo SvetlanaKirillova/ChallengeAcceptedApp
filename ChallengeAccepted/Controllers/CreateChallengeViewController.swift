@@ -19,7 +19,6 @@ class CreateChallengeViewController: UIViewController {
     
     @IBOutlet weak var counterGoalTF: UITextField!
 
-
     @IBOutlet weak var counterPropsView: UIView!
     @IBOutlet weak var goalDirectionButton: UIButton!
     
@@ -120,18 +119,20 @@ class CreateChallengeViewController: UIViewController {
             }
             
         }
-        
-        let counterChallengeGoal = Int(counterGoalTF.text ?? "0")
-        var counterChallengeDirection: GoalSign?
         if type == .counter {
-            counterChallengeDirection = (goalDirectionButton.titleLabel?.text == GoalSign.lessThan.rawValue) ? GoalSign.lessThan : GoalSign.moreThan
-        }
+            let counterChallengeGoal = Int(counterGoalTF.text ?? "0") ?? 0
+            let counterChallengeDirection = (goalDirectionButton.titleLabel?.text == GoalSign.lessThan.rawValue) ? GoalSign.lessThan : GoalSign.moreThan
+            createViewModel.createCounterChallenge(title: title,
+                                                   duration: durationToSave,
+                                                   goal: counterChallengeGoal,
+                                                   goalDirection: counterChallengeDirection)
+        } else if type == .streak {
             
-        createViewModel.createNewChallenge(title: title,
-                                              type: type,
-                                              duration: durationToSave,
-                                              goal: counterChallengeGoal,
-                                              goalDirection: counterChallengeDirection)
+            createViewModel.createStreakChallenge(title: title, duration: durationToSave)
+            
+        }
+        
+            
         
         
         self.performSegue(withIdentifier: K.segueUnwindCreateViewController , sender: self)

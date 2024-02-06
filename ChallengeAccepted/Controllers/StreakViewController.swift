@@ -56,7 +56,7 @@ class StreakViewController: UIViewController {
         
 //        questionLabel.text = "Double tap to check date"
         progressView.layer.cornerRadius = 10
-        dateToCheckView.layer.cornerRadius = 50
+        dateToCheckView.layer.cornerRadius = 30
         
         updateViews()
         
@@ -87,7 +87,7 @@ class StreakViewController: UIViewController {
     func updateProgressView(){
         
         if let challengeViewModel = challengeViewModel {
-            var progress = challengeViewModel.progress
+            let progress = challengeViewModel.progress
             progressBar.progress = progress
                 
             progresDescription.text = challengeViewModel.progressDescription

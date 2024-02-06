@@ -25,7 +25,8 @@ class TicketCollectionCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-//        self.backgroundColor = .red
+//        layer.borderWidth = 0.2
+//        layer.borderColor = UIColor(named: K.colors.blue )?.cgColor
         
         ticketAnimation = .init(name: "ticket")
         

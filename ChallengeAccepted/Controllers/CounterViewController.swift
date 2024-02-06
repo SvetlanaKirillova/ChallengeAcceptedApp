@@ -12,29 +12,18 @@ import Lottie
 class CounterViewController: UIViewController {
 
     
-    @IBOutlet weak var challengeNameLabel: UILabel!
-    
     @IBOutlet weak var goalUntilDescription: UILabel!
 
     @IBOutlet weak var ticketsCollectionView: UICollectionView!
     
-  
+    @IBOutlet weak var plusImageView: UIImageView!
+    
+    private var comletionAnimationView: LottieAnimationView?
+    
     let realm = try! Realm()
 
     var challengeViewModel: ChallengeViewModel?
-    
-    var ticketsArray = [String]()
-    
-    var leftTicketsCount: Int {
-        if let challengeViewModel = challengeViewModel {
-            if challengeViewModel.counterGoal - challengeViewModel.checkedDates.count > 0 {
-                return challengeViewModel.counterGoal - challengeViewModel.checkedDates.count
-            }
-        }
-        
-        print(" There are tickets count is out of goal...")
-        return 0
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +33,7 @@ class CounterViewController: UIViewController {
         ticketsCollectionView.dataSource = self
         ticketsCollectionView.delegate = self
         
+        
         initiateHeaderView()
     }
     
@@ -51,26 +41,51 @@ class CounterViewController: UIViewController {
     func initiateHeaderView(){
         
         if let challengeViewModel = challengeViewModel {
-            challengeNameLabel.text = challengeViewModel.title
             
-            let untilDate = Calendar.current.date(byAdding: .day,
-                                                  value: challengeViewModel.duration,
-                                                  to: challengeViewModel.startDate)!
+            title = challengeViewModel.title
+            
+            if challengeViewModel.counterChallengeDirection == .lessThan {
+                plusImageView.isHidden = true
+            }
+            
+            let untilDate = challengeViewModel.challengeEndDate
             
             let formatter = DateFormatter()
+            formatter.setLocalizedDateFormatFromTemplate("MMMM d, yyyy")
             
-            formatter.setLocalizedDateFormatFromTemplate("dd.MM.YYYY")
-            
-            switch challengeViewModel.counterChallengeDirection {
+            if challengeViewModel.counterStatus == .inProgress {
                 
-            case .lessThan:
-                goalUntilDescription.text = " use maximum \(challengeViewModel.counterGoal) tickets until \(formatter.string(from: untilDate) )"
-            default:
-                goalUntilDescription.text = " use munimum \(challengeViewModel.counterGoal) tickets until \(formatter.string(from: untilDate))"
-                
+                switch challengeViewModel.counterChallengeDirection {
+                    
+                case .lessThan:
+                    goalUntilDescription.text = "Use maximum \(challengeViewModel.counterGoal) tickets until \(formatter.string(from: untilDate) )"
+                default:
+                    goalUntilDescription.text = "Create munimum \(challengeViewModel.counterGoal) tickets until \(formatter.string(from: untilDate))"
+                }
+            } else {
+                showStatusChallengeMessage()
             }
         }
         
+    }
+    
+    
+    func showStatusChallengeMessage(){
+        
+        switch challengeViewModel?.counterStatus {
+        case .completed:
+            goalUntilDescription.text = "Awesome! Challenge completed!"
+        case .failed:
+            goalUntilDescription.text = "Challenge was not completed..."
+        default: break
+            
+        }
+            
+    }
+    
+    
+    @IBAction func plusCounterTapped(_ sender: UITapGestureRecognizer) {
+        saveTicketUsageToRealm()
     }
     
     
@@ -78,10 +93,21 @@ class CounterViewController: UIViewController {
         
         if let challengeViewModel = challengeViewModel {
             challengeViewModel.updateCheckedDate(date: Date(), isDone: true)
+            
+            if challengeViewModel.counterStatus == .completed {
+                
+            }
             ticketsCollectionView.reloadData()
+            
+            if challengeViewModel.counterStatus == .completed {
+                runComletionGoalAnimation()
+            }
+            
         }
 
     }
+    
+    
 
 
     // MARK: - Realm Challenge
@@ -111,6 +137,25 @@ class CounterViewController: UIViewController {
     }
     
     
+    func runComletionGoalAnimation(){
+        
+        comletionAnimationView = .init(name: "final")
+          
+        comletionAnimationView?.frame = view.bounds
+          
+        comletionAnimationView?.contentMode = .scaleAspectFit
+          
+        comletionAnimationView!.loopMode = .playOnce
+          
+        comletionAnimationView!.animationSpeed = 0.3
+          
+        view.addSubview(comletionAnimationView!)
+          
+        comletionAnimationView!.play { whenDone in
+            self.comletionAnimationView?.isHidden = true
+        }
+          
+    }
 }
 
 
@@ -119,8 +164,11 @@ class CounterViewController: UIViewController {
 extension CounterViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return leftTicketsCount
-
+        if let challengeViewModel = challengeViewModel {
+            return challengeViewModel.ticketsCount
+        }
+        
+        return 0
     }
     
     
@@ -130,9 +178,12 @@ extension CounterViewController: UICollectionViewDelegate, UICollectionViewDataS
             fatalError()
         }
         
-        let tgr = UITapGestureRecognizer(target: self, action: #selector(ticketCellTapped))
-        tgr.numberOfTapsRequired = 2
-        cell.addGestureRecognizer(tgr)
+        if challengeViewModel?.counterChallengeDirection == .lessThan {
+            let tgr = UITapGestureRecognizer(target: self, action: #selector(ticketCellTapped))
+            tgr.numberOfTapsRequired = 2
+            cell.addGestureRecognizer(tgr)
+        }
+        
  
         return cell
     }

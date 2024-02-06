@@ -170,7 +170,7 @@ extension CalendarViewController: CalendarPickerDelegate {
     
     func calendarPicker(_ calendarPicker: CalendarPicker, didSelectDate date: Date) {
 
-        print("Selected date \( date.formatted(date: .complete, time: .omitted))")
+//        print("Selected date \( date.formatted(date: .complete, time: .omitted))")
         if let index = calendarPicker.selectedDates.firstIndex(of: date) {
 
             calendarPicker.selectedDates.remove(at: index)

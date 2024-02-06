@@ -9,11 +9,18 @@ import Foundation
 import RealmSwift
 
 
+enum ChallengeStatus {
+    case inProgress
+    case completed
+    case failed
+}
+
+
 struct ChallengeViewModel {
     
     let realm = try! Realm()
 
-    let challenge: Challenge
+    private let challenge: Challenge
     
     init(challenge: Challenge) {
         self.challenge = challenge
@@ -61,16 +68,46 @@ struct ChallengeViewModel {
         return Array(challenge.checkedDates)
     }
     
+    var ticketsCount: Int {
+        if challenge.counterGoalDirection == .lessThan {
+            return challenge.goal - challenge.checkedDates.count
+        } else {
+            return challenge.checkedDates.count
+        }
+    }
     
+    var challengeEndDate: Date {
+        if let date = Calendar.current.date(byAdding: .day,
+                                            value: challenge.duration,
+                                            to: challenge.startDate){
+            return date.onlyDate
+        }
+        
+        return Date()
+    }
     
+    var counterStatus: ChallengeStatus {
+        let today = Date().onlyDate
+        
+        if challenge.counterGoalDirection == .moreThan {
+            
+            if today > challengeEndDate {
+                return challenge.checkedDates.count >= challenge.goal ? .completed : .failed
+            }
+            
+            return challenge.checkedDates.count >= challenge.goal ? .completed : .inProgress
+            
+        } else {
+            
+            
+        }
+        
+        
+        return .inProgress
+    }
     
     // MARK: - CRUD for Challenges
     
-//    mutating func loadChallenges(){
-//
-//        challenges = realm.objects(Challenge.self)
-//    }
-//
     
     func createNewChallenge(title: String, type: ChallengeType, duration: Int, goal: Int?, goalDirection: GoalSign? ){
         

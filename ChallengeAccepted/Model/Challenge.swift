@@ -45,7 +45,7 @@ class Challenge: Object {
         var fromDate = Date()
         var toDate = Date()
 
-        for dayIndex in 0...datesCount {
+        for dayIndex in 0..<datesCount {
             fromDate = checkedDates[datesCount-dayIndex-1]
             
             let dist = Calendar.current.dateComponents([.day], from: fromDate, to: toDate).day

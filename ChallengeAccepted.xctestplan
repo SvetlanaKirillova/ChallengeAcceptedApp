@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "9BD7F7B6-14A4-4ACB-BA69-8C9E9283EA40",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ChallengeAccepted.xcodeproj",
+      "identifier" : "1C18700E29A22F560043A29D",
+      "name" : "ChallengeAccepted"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ChallengeAccepted.xcodeproj",
+        "identifier" : "1C5280B52A9CBA3C00D4D611",
+        "name" : "ChallengeAcceptedTests"
+      }
+    }
+  ],
+  "version" : 1
+}
